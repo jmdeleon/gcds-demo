@@ -5,7 +5,7 @@
     <div slot="menu"><gcds-topic-menu/></div>
   </gcds-header>
 
-<div class="content">
+  <div class="content">
 
     <gcds-side-nav label="GC Forms">
       <gcds-nav-link href="#">Why GC Forms</gcds-nav-link>
@@ -28,112 +28,112 @@
       <gcds-nav-link href="#">Contact us</gcds-nav-link>
     </gcds-side-nav>
 
-  <main>
+    <main>
 
-    <gcds-breadcrumbs>
-      <gcds-breadcrumbs-item href="#">Base page link</gcds-breadcrumbs-item>
-      <gcds-breadcrumbs-item href="#">Parent page link</gcds-breadcrumbs-item>
-    </gcds-breadcrumbs>
+      <gcds-breadcrumbs>
+        <gcds-breadcrumbs-item href="#">Base page link</gcds-breadcrumbs-item>
+        <gcds-breadcrumbs-item href="#">Parent page link</gcds-breadcrumbs-item>
+      </gcds-breadcrumbs>
 
-    <gcds-heading tag="h1">
-      <span id="wb-main">Welcome</span>
-    </gcds-heading>
+      <gcds-heading tag="h1">
+        <span id="wb-main">Welcome</span>
+      </gcds-heading>
 
-    <gcds-error-message
-      message-id="message-props"
-      message="Error message or validation message."
+      <gcds-error-message
+        message-id="message-props"
+        message="Error message or validation message."
+      >
+      </gcds-error-message>
+
+      <gcds-text>A message from the random acts of development as seen on TV.</gcds-text>
+
+      <gcds-card
+        card-title="Card title link"
+        href="https://canada.ca"
+        tag="Topics"
+        description="Description or supporting text relating to the headline."
+      >
+      </gcds-card>
+
+      <gcds-textarea
+        textarea-id="textarea-props"
+        label="Label"
+        hint="Hint / Example message."
+      >
+      </gcds-textarea>
+
+      <gcds-error-summary
+        error-links='{
+          "error-href-1": "Error summary item.",
+          "error-href-2": "Error summary item.",
+          "error-href-3": "Error summary item."
+        }'
+      >
+      </gcds-error-summary>
+
+    <gcds-fieldset
+      fieldset-id="field-default"
+      legend="Legend"
+      hint="Hint / Example message."
     >
-    </gcds-error-message>
 
-    <gcds-text>A message from the random acts of development as seen on TV.</gcds-text>
+      <gcds-input
+        input-id="field-default-input"
+        label="Input label"
+        hint="Hint / Example message."
+        size="6"
+      >
+      </gcds-input>
 
-    <gcds-card
-      card-title="Card title link"
-      href="https://canada.ca"
-      tag="Topics"
-      description="Description or supporting text relating to the headline."
-    >
-    </gcds-card>
+      <gcds-select
+        select-id="field-default-select"
+        label="Select label"
+        hint="Hint / Example message."
+        default-value="Select option."
+      >
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+        <option value="7">Option 7</option>
+        <option value="8">Option 8</option>
+      </gcds-select>
+    
+    </gcds-fieldset>
 
-    <gcds-textarea
-      textarea-id="textarea-props"
+    <gcds-details details-title="Learn more about this topic">
+
+      <gcds-text>This is some example content to display the gcds-details component. It is a paragraph displaying non-heading content with matching GC Design System styles to provide accessible text sizes and colour contrast.</gcds-text>
+
+      <gcds-select
+      select-id="select-props"
       label="Label"
       hint="Hint / Example message."
-    >
-    </gcds-textarea>
-
-    <gcds-error-summary
-      error-links='{
-        "error-href-1": "Error summary item.",
-        "error-href-2": "Error summary item.",
-        "error-href-3": "Error summary item."
-      }'
-    >
-    </gcds-error-summary>
-
-  <gcds-fieldset
-    fieldset-id="field-default"
-    legend="Legend"
-    hint="Hint / Example message."
-  >
-
-    <gcds-input
-      input-id="field-default-input"
-      label="Input label"
-      hint="Hint / Example message."
-      size="6"
-    >
-    </gcds-input>
-
-    <gcds-select
-      select-id="field-default-select"
-      label="Select label"
-      hint="Hint / Example message."
       default-value="Select option."
-    >
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-      <option value="4">Option 4</option>
-      <option value="5">Option 5</option>
-      <option value="6">Option 6</option>
-      <option value="7">Option 7</option>
-      <option value="8">Option 8</option>
-    </gcds-select>
-  
-  </gcds-fieldset>
+      >
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+        <option value="6">Option 6</option>
+        <option value="7">Option 7</option>
+        <option value="8">Option 8</option>
+      </gcds-select>
+    
+    </gcds-details>
 
-  <gcds-details details-title="Learn more about this topic">
+    <gcds-date-modified>
+      2024-01-26
+    </gcds-date-modified>
 
-    <gcds-text>This is some example content to display the gcds-details component. It is a paragraph displaying non-heading content with matching GC Design System styles to provide accessible text sizes and colour contrast.</gcds-text>
+    </main>
 
-    <gcds-select
-    select-id="select-props"
-    label="Label"
-    hint="Hint / Example message."
-    default-value="Select option."
-    >
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-      <option value="4">Option 4</option>
-      <option value="5">Option 5</option>
-      <option value="6">Option 6</option>
-      <option value="7">Option 7</option>
-      <option value="8">Option 8</option>
-    </gcds-select>
-  
-  </gcds-details>
+  </div>
 
-  <gcds-date-modified>
-    2024-01-26
-  </gcds-date-modified>
-
-</main>
-
-</div>
-
-<gcds-footer display="full"/>
+  <gcds-footer display="full"/>
 
 </div>
 <router-outlet />
