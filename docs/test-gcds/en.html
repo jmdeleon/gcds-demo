@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Components - GC Design System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="favicon.ico">
+
+<!-- Icons Font Awesome (to access icons, import Font Awesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+
+<!-- GC Design System -->
+<link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.css">
+<script type="module" src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.esm.js"></script>
+<script nomodule src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.js"></script>
+    
+  </head>
+  <body>
+<div class="container">
+  <gcds-header lang-href="fr.html" skip-to-href="#wb-main">
+    <div slot="search"><gcds-search/></div>
+    <div slot="menu"><gcds-topic-menu/></div>
+  </gcds-header>
+
+  <div class="content">
+
+    <gcds-side-nav label="GC Forms">
+      <gcds-nav-link href="#">Why GC Forms</gcds-nav-link>
+    
+      <gcds-nav-group open-trigger="Features" menu-label="Features">
+        <gcds-nav-group open-trigger="Build and manage forms yourself" menu-label="Build and manage forms yourself sublevel">
+          <gcds-nav-link href="#">Review in both official languages side-by-side</gcds-nav-link>
+          <gcds-nav-link href="#">Get form responses delivered securely</gcds-nav-link>
+          <gcds-nav-link href="#">Test forms before publishing</gcds-nav-link>
+        </gcds-nav-group>
+    
+        <gcds-nav-group open-trigger="Publish trusted, user-friendly forms" menu-label="Publish trusted, user-friendly forms sublevel">
+          <gcds-nav-link href="#">Forms that people can fill out anywhere</gcds-nav-link>
+          <gcds-nav-link href="#">Forms that save time and effort</gcds-nav-link>
+          <gcds-nav-link href="#">Forms with the GC look and feel</gcds-nav-link>
+        </gcds-nav-group>
+      </gcds-nav-group>
+    
+      <gcds-nav-link href="#">Guidance</gcds-nav-link>
+      <gcds-nav-link href="#">Contact us</gcds-nav-link>
+    </gcds-side-nav>
+
+    <main>
+
+      <gcds-breadcrumbs>
+        <gcds-breadcrumbs-item href="#">Base page link</gcds-breadcrumbs-item>
+        <gcds-breadcrumbs-item href="#">Parent page link</gcds-breadcrumbs-item>
+      </gcds-breadcrumbs>
+
+      <gcds-heading tag="h1">
+        <span id="wb-main">Welcome</span>
+      </gcds-heading>
+
+      <gcds-error-message
+        message-id="message-props"
+        message="Error message or validation message."
+      >
+      </gcds-error-message>
+
+      <gcds-text>A message from the random acts of development as seen on TV.</gcds-text>
+
+      <gcds-card
+        card-title="Card title link"
+        href="https://canada.ca"
+        tag="Topics"
+        description="Description or supporting text relating to the headline."
+      >
+      </gcds-card>
+
+      <gcds-textarea
+        textarea-id="textarea-props"
+        label="Label"
+        hint="Hint / Example message."
+      >
+      </gcds-textarea>
+
+      <gcds-error-summary
+        error-links='{
+          "error-href-1": "Error summary item.",
+          "error-href-2": "Error summary item.",
+          "error-href-3": "Error summary item."
+        }'
+      >
+      </gcds-error-summary>
+
+      <gcds-fieldset
+        fieldset-id="field-default"
+        legend="Legend"
+        hint="Hint / Example message."
+      >
+
+        <gcds-input
+          input-id="field-default-input"
+          label="Input label"
+          hint="Hint / Example message."
+          size="6"
+        >
+        </gcds-input>
+
+        <gcds-select
+          select-id="field-default-select"
+          label="Select label"
+          hint="Hint / Example message."
+          default-value="Select option."
+        >
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+          <option value="6">Option 6</option>
+          <option value="7">Option 7</option>
+          <option value="8">Option 8</option>
+        </gcds-select>
+      
+      </gcds-fieldset>
+
+      <gcds-details details-title="Learn more about this topic">
+
+        <gcds-text>This is some example content to display the gcds-details component. It is a paragraph displaying non-heading content with matching GC Design System styles to provide accessible text sizes and colour contrast.</gcds-text>
+
+        <gcds-select
+        select-id="select-props"
+        label="Label"
+        hint="Hint / Example message."
+        default-value="Select option."
+        >
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+          <option value="4">Option 4</option>
+          <option value="5">Option 5</option>
+          <option value="6">Option 6</option>
+          <option value="7">Option 7</option>
+          <option value="8">Option 8</option>
+        </gcds-select>
+      
+      </gcds-details>
+
+      <gcds-date-modified>
+        2024-01-26
+      </gcds-date-modified>
+
+    </main>
+
+  </div>
+
+  <gcds-footer display="full"/>
+</div>
+  </body>
+</html>
