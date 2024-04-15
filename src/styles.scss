@@ -1,3 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* FontAwesome */
+
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css';
+
+/* GC Design System Utility */
+@import '../node_modules/@cdssnc/gcds-utility/dist/gcds-utility.min.css';
+
 @import '../node_modules/@cdssnc/gcds-components/dist/gcds/gcds.css';
