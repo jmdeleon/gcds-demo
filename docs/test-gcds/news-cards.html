@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="favicon.ico">
+ 
+    <title>News - GC Design System</title>
+ 
+    <!-- GC Design System Utility -->
+    <link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-utility@latest/dist/gcds-utility.min.css">
+
+    <!-- Other GCDS CSS -->
+    <link rel="stylesheet" href="https://design-system.alpha.canada.ca/styles/prism.css">
+    <link rel="stylesheet" href="https://design-system.alpha.canada.ca/styles/style.css">
+
+    <!-- Icons Font Awesome (to access icons, import Font Awesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+
+    <!-- GC Design System -->
+    <link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.css">
+    <script type="module" src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.esm.js"></script>
+    <script nomodule src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.js"></script>
+
+    <!-- Custom CSS goes here -->
+    <link rel="stylesheet" href="news-cards.css">
+
+  </head>
+  <body>
+
+    <gcds-header lang-href="fr.html" skip-to-href="#wb-main">
+      <gcds-search slot="search"></gcds-search>
+      <gcds-topic-menu slot="menu"></gcds-topic-menu>
+      <gcds-breadcrumbs slot="breadcrumb">
+        <gcds-breadcrumbs-item href="#">Base page link</gcds-breadcrumbs-item>
+        <gcds-breadcrumbs-item href="#">Parent page link</gcds-breadcrumbs-item>
+      </gcds-breadcrumbs>
+    </gcds-header>
+
+    <div class="container-xl mx-auto">
+
+      <gcds-heading tag="h1">
+        <span id="wb-main">News</span>
+      </gcds-heading>
+
+      <main>
+
+        <gcds-grid tag="article" columns="repeat(auto-fit)">
+          <gcds-card card-title="Image caption" href="#" img-src="https://via.placeholder.com/1170x347/F5F5F5/000000.png">
+          </gcds-card>
+        </gcds-grid>
+
+        <gcds-heading tag="h2">Features</gcds-heading>
+
+        <gcds-grid tag="article" columns="repeat(auto-fit, 348px)">
+
+          <gcds-card card-title="[Feature hyperlink text]" href="#" img-src="https://via.placeholder.com/360x203/000000/FFFFFF.png">
+            <div slot="footer">Brief description of the feature being promoted. Brief description of the feature being promoted.</div>
+          </gcds-card>
+
+          <gcds-card card-title="[Feature hyperlink text]" href="#" img-src="https://via.placeholder.com/360x203/000000/FFFFFF.png">
+            <div slot="footer">Brief description of the feature being promoted. Brief description of the feature being promoted.</div>
+          </gcds-card>
+
+          <gcds-card card-title="[Feature hyperlink text]" href="#" img-src="https://via.placeholder.com/360x203/000000/FFFFFF.png">
+            <div slot="footer">Brief description of the feature being promoted. Brief description of the feature being promoted.</div>
+          </gcds-card>
+
+        </gcds-grid>
+
+        <gcds-grid tag="article" columns-desktop="0.34fr 0.66fr" columns-tablet="0.34fr 0.66fr" columns="1fr">
+          <gcds-container class="mt-500">
+            <gcds-details details-title="Filter options">
+
+              <gcds-text>Use filters to below options to change the focus of your results in following data table</gcds-text>
+    
+              <gcds-select
+              select-id="select-props"
+              label="Label"
+              hint="Hint / Example message."
+              default-value="Select option."
+              >
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+                <option value="4">Option 4</option>
+              </gcds-select>
+          
+            </gcds-details>
+          </gcds-container>
+
+          <gcds-card class="mt-500" card-title="[Feature hyperlink text]" href="#" img-src="https://via.placeholder.com/716x560/F5F5F5/000000.png">
+          </gcds-card>
+        </gcds-grid>
+
+      </main>
+
+      <gcds-date-modified>
+        2023-09-01
+      </gcds-date-modified>
+
+    </div>
+
+    <gcds-footer display="full"/>
+ 
+  </body>
+</html>
