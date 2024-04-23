@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Components - GC Design System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- link rel="stylesheet" href="layout.css" / -->
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://design-system.alpha.canada.ca/styles/prism.css">
+    <link rel="stylesheet" href="https://design-system.alpha.canada.ca/styles/style.css">
+    
+<!-- Icons Font Awesome (to access icons, import Font Awesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous">
+
+<!-- GC Design System Utility -->
+<link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-utility@latest/dist/gcds-utility.min.css">
+
+<!-- GC Design System -->
+<link rel="stylesheet" href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.css">
+<script type="module" src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.esm.js"></script>
+<script nomodule src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@latest/dist/gcds/gcds.js"></script>
+    
+  </head>
+  <body>
+<div class="container">
+  <gcds-header lang-href="fr.html" skip-to-href="#wb-main">
+    <div slot="search"><gcds-search/></div>
+    <div slot="menu"><gcds-topic-menu/></div>
+  </gcds-header>
+
+<!-- 
+  <div class="content">
+    <gcds-side-nav label="GC Forms">
+      <gcds-nav-link href="#">Why GC Forms</gcds-nav-link>
+    
+      <gcds-nav-group open-trigger="Features" menu-label="Features">
+        <gcds-nav-group open-trigger="Build and manage forms yourself" menu-label="Build and manage forms yourself sublevel">
+          <gcds-nav-link href="#">Review in both official languages side-by-side</gcds-nav-link>
+          <gcds-nav-link href="#">Get form responses delivered securely</gcds-nav-link>
+          <gcds-nav-link href="#">Test forms before publishing</gcds-nav-link>
+        </gcds-nav-group>
+    
+        <gcds-nav-group open-trigger="Publish trusted, user-friendly forms" menu-label="Publish trusted, user-friendly forms sublevel">
+          <gcds-nav-link href="#">Forms that people can fill out anywhere</gcds-nav-link>
+          <gcds-nav-link href="#">Forms that save time and effort</gcds-nav-link>
+          <gcds-nav-link href="#">Forms with the GC look and feel</gcds-nav-link>
+        </gcds-nav-group>
+      </gcds-nav-group>
+    
+      <gcds-nav-link href="#">Guidance</gcds-nav-link>
+      <gcds-nav-link href="#">Contact us</gcds-nav-link>
+    </gcds-side-nav>
+  -->
+
+    <main id="mc" class="container-xl mx-auto xl:px-0 sm:px-500 px-300 general-layout">
+        
+  
+      <h1 id="grid-brgcdsgrid" class="mb-400">Grid <br><code>&lt;gcds-grid&gt;</code></h1>
+  <p class="mb-400"><em>Also called: layout, columns, columns layout, grid container.</em></p>
+  <p class="mb-400">A grid is a responsive, flexible column layout to position elements on a page.</p>
+  <p class="mb-400"></p><ul class="d-flex flex-wrap gap-400">
+  <li class="github-link">
+  <gcds-link external="" href="https://github.com/cds-snc/gcds-components/tree/main/packages/web/src/components/gcds-grid" class="hydrated">GitHub</gcds-link>
+  </li>
+  <li class="figma-link">
+  <gcds-link external="" href="https://www.figma.com/file/mh2maMG2NBtk41k1O1UGHV/Canadian-Digital-Service%E2%80%A8---GC-Design-System?type=design&amp;node-id=13172-65&amp;mode=design&amp;t=qwNFRgCKhnoUtRXO-0" class="hydrated">Figma</gcds-link>
+  </li>
+  </ul><p></p>
+  <p class="mb-400"></p><div class="my-500 b-sm b-default component-preview">
+  <p class="container-full font-semibold px-300 py-200 bb-sm b-default bg-light">
+  Grid component preview
+  </p>
+  <div class="px-300 py-400"><p></p>
+  <gcds-grid tag="article" columns-desktop="1fr 1fr 1fr 1fr" columns-tablet="1fr 1fr" columns="1fr" gap="500" class="hydrated">
+    <p>This is some example content to display the grid component.</p>
+    <p>This is some example content to display the grid component.</p>
+    <p>This is some example content to display the grid component.</p>
+    <p>This is some example content to display the grid component.</p>
+  </gcds-grid>
+  <p class="mb-400"></p></div>
+  </div><p></p>
+  
+      <nav class="tabs mb-400" aria-label="Guidance tabs">
+        <ul>
+          
+            
+          
+            
+              <li class="tab">
+                <a href="/en/components/grid/" aria-current="page">
+                  Use case
+                </a>
+              </li>
+            
+          
+            
+              <li class="tab">
+                <a href="/en/components/grid/design/">
+                  Design
+                </a>
+              </li>
+            
+          
+            
+              <li class="tab">
+                <a href="/en/components/grid/code/">
+                  Code
+                </a>
+              </li>
+            
+          
+            
+          
+            
+          
+        </ul>
+      </nav>
+    
+  
+    <p class="mb-400">Check out the problems grids solve to see if they fit the problem you're solving for.</p>
+  <h2 id="problems-grids-solve" class="mt-500 mb-400">Problems grids solve</h2>
+  <p class="mb-400">Grids create column layouts that keep content elements grouped across different devices and screens.</p>
+  <p class="mb-400">Use grids to:</p>
+  <ul class="list-disc mb-400"><li><p class="mb-400">Apply a flexible column layout that scales to the screen size (viewport) of the user's device.</p></li>
+  <li><p class="mb-400">Guide focus by defining the width of a column and the spacing between columns.</p></li>
+  <li><p class="mb-400">Create complex layouts with control over the sizing of each column.</p></li>
+  <li><p class="mb-400">Accommodate different screen sizes by setting a custom, optimized layout for different viewports, like mobile, tablet, and desktop.</p></li>
+  <li><p class="mb-400">Limit the width of content displayed to ensure lines wrap and are more readable.</p></li>
+  </ul>
+  <article class="bg-full-width bg-primary text-light pt-500 pb-400 my-500">
+    <h2 class="mt-0 mb-400">Related components</h2>
+  <p class="mb-400"><a href="/en/components/container" class="link-light">Container</a> for applying a basic, single column layout across all viewports.</p>
+  <p class="mb-400"><a href="/en/components/card" class="link-light">Card</a> for structuring actionable content in a group on a single topic.</p>
+  </article>
+  
+  
+    <section class="pt-100 mt-400 mb-600 bt-sm b-dark ">
+    <h2 class="mt-300 mb-400">
+      Help us improve
+    </h2>
+  
+    <p class="mb-400">
+      Have questions? Something you'd change or you'd like to see? Share your feedback with us to help improve GC Design System.
+    </p>
+  
+    <gcds-button type="link" button-role="secondary" href="/en/contact/#contact-us" class="hydrated">
+      Give feedback
+    </gcds-button>
+  </section>
+  
+  
+  
+          <gcds-date-modified class="mb-400 font-caption sc-gcds-date-modified-h sc-gcds-date-modified-s hydrated"><!----><dl class="gcds-date-modified sc-gcds-date-modified"><dt class="sc-gcds-date-modified">Date modified:</dt><dd class="sc-gcds-date-modified"><time class="sc-gcds-date-modified sc-gcds-date-modified-s">
+            2024-03-04
+          </time></dd></dl></gcds-date-modified>
+        </main>
+<!--
+  </div>
+-->
+
+  <gcds-footer display="full"/>
+</div>
+  </body>
+</html>
